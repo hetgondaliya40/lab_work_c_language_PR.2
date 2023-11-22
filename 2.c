@@ -2,11 +2,10 @@
 #include<conio.h>
 main(){
 	
-	int s,c,bill;
-	float u;
+	double u,s,c,bill;
 	clrscr();
 	printf("enter unit :");
-	scanf("%f",&u);
+	scanf("%if",&u);
 	
 	if(u<=50){
 		s=u*0.50;
@@ -17,11 +16,11 @@ main(){
 	}else {
 		s=(u-250)*1.50+225;
 	}
-	printf("total = %.2d\n",s);
+	printf("total = %.2if\n",s);
 	
 	c=s*20/100;
 	bill=s+c;
 	
-	printf("bill = %.2d\n",bill);
+	printf("bill = %.2if\n",bill);
 	gatch();
 }
